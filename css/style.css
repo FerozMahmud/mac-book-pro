@@ -1,0 +1,18 @@
+/* Table Style  */
+table {
+    border-collapse: collapse;
+  }
+  
+  tr{
+    border-bottom: 2px solid gray;
+  }
+
+/* Delivery Part Style  */
+  #delivery-charge {
+    border-bottom: 3px solid rgb(78, 78, 78);
+}
+
+/* Total Price Part Style  */
+#total-price-part {
+    border: 0px;
+}

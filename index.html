@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro</title>
+    <!------ CSS Stylesheet Link here ------>
+    <link rel="stylesheet" href="css/style.css">
+    <!------ Tailwind CSS link here ------>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main class="divide-y divide-gray-200">
+        <section class="grid grid-cols-2 gap-8 mt-8 mx-32">
+            <!------------ Image Part ----------->
+            <div class="flex justify-center p-4">
+                <div>
+                    <img class="w-auto" src="images/mac.png" alt="photos-of-mac-book-pro">
+                </div>
+            </div>
+            <!------------ Content Part ----------->
+            <div class="p-4">
+                <div>
+                    <h1 class="text-4xl font-semibold">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                    <p class="mt-4 text-base font-medium text-gray-600">Apple M1 chip with 8-core CPU with 4 performance
+                        cores and 4
+                        efficiency
+                        cores, 7-core GPU, and
+                        16-core Neural Engine 8GB unified memory 256 GB SSD storage Two Thunderbolt / USB 4 ports Magic
+                        Mouse Magic keyboard - US English</p>
+                </div>
+                <!----------- Memory Part ---------->
+                <h3 class="mt-16 font-bold">Memory</h3>
+                <div class="mt-2">
+                    <button id="8gb-memory"
+                        class="bg-transparent hover:bg-gray-900 focus:border-blue-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-400 hover:border-transparent rounded">
+                        8GB unified memory
+                    </button>
+                    <button id="16gb-memory"
+                        class="bg-transparent hover:bg-gray-900 focus:border-blue-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-400 hover:border-transparent rounded">
+                        16GB unified memory
+                    </button>
+                </div>
+                <!------------ Storage Part ----------->
+                <h3 class="mt-16 font-bold">Storage</h3>
+                <div class="mt-2">
+                    <button id="256gb-ssd"
+                        class="bg-transparent hover:bg-gray-900 focus:border-blue-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-400 hover:border-transparent rounded">
+                        256GB SSD storage
+                    </button>
+                    <button id="512gb-ssd"
+                        class="bg-transparent hover:bg-gray-900 focus:border-blue-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-400 hover:border-transparent rounded">
+                        512GB SSD storage
+                    </button>
+                    <button id="1t-ssd"
+                        class="bg-transparent hover:bg-gray-900 focus:border-blue-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-400 hover:border-transparent rounded">
+                        1TB SSD storage
+                    </button>
+                </div>
+                <!------------ Delivery Part ----------->
+                <h3 class="mt-16 font-bold">Choose your delivery option</h3>
+                <div class="mt-2">
+                    <button id="free-delivery"
+                        class="bg-transparent hover:bg-gray-900 focus:border-blue-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-400 hover:border-transparent rounded">
+                        Friday, Aug 25 FREE Prime Delivery
+                    </button>
+                    <button id="paid-delivery"
+                        class="bg-transparent hover:bg-gray-900 focus:border-blue-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-400 hover:border-transparent rounded">
+                        Friday, Aug 21 Delivery charge $20
+                    </button>
+                </div>
+                <!------------ Table Part ----------->
+                <div class="font-bold mt-20 w-3/4">
+                    <div class="">
+                        <table class="">
+                            <tr class="grid grid-cols-2 py-4">
+                                <th class="flex justify-start">Best Price</th>
+                                <th class="flex justify-end">$<span id="total-cost">1299</span></th>
+                            </tr>
+                            <tr class="grid grid-cols-2 py-4">
+                                <th class="flex justify-start">Extra Memory Cost</th>
+                                <th class="flex justify-end">$<span id="memory-cost">0</span></th>
+                            </tr>
+                            <tr class="grid grid-cols-2 py-4">
+                                <th class="flex justify-start">Extra Storage Cost</th>
+                                <th class="flex justify-end">$<span id="storage-cost">0</span></th>
+                            </tr>
+                            <tr id="delivery-charge" class="grid grid-cols-2 py-4">
+                                <th class="flex justify-start">Delivery charge</th>
+                                <th class="flex justify-end">$<span id="delivery-cost">0</span></th>
+                            </tr>
+                            <tr class="grid grid-cols-2 py-4">
+                                <th class="flex justify-start">Total Price</th>
+                                <th class="flex justify-end">$<span id="total-price">1299</span></th>
+                            </tr>
+                        </table>
+                    </div>
+                    <!------------ Promo Code Part ----------->
+                    <div class="mt-2 pb-4">
+                        <p class="text-gray-700">Add Promo Code</p>
+                        <form class="w-full max-w-sm">
+                            <div class="flex items-center py-2">
+                                <input id="input-code" class="bg-gray-200 w-full text-gray-700 mr-3 py-2 px-2"
+                                    type="text">
+                                <button id="promo-btn"
+                                    class="bg-red-800 hover:bg-gray-900 text-gray-100 font-semibold hover:text-white py-2 px-4 border border-gray-400 hover:border-transparent rounded">
+                                    Apply
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <!------------ Total Price Part ----------->
+            <div class="divide-y divide-gray-500 m-4 p-4">
+                <h2 class="flex justify-center text-4xl font-semibold text-gray-700">Total: $<span
+                        id="discount-price">1299</span>
+                </h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <!-- Javascript link here -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
